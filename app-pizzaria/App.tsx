@@ -1,4 +1,4 @@
-import { View } from "react-native";
+import { StatusBar, View } from "react-native";
 
 import { NavigationContainer } from "@react-navigation/native";
 import Routes from "./src/routes";
@@ -6,6 +6,7 @@ import Routes from "./src/routes";
 export default function App() {
     return (
         <NavigationContainer>
+            <StatusBar barStyle="light-content" />
             <Routes />
         </NavigationContainer>
     );
